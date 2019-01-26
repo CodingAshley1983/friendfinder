@@ -54,6 +54,7 @@ app.get("/api/friends", function(req, res) {
         match = {
           name: currentFriend.name,
           image: currentFriend.image,
+          personality: currentFriend.personality,
           friendScore: totalDifference
         }
         console.log(match);
