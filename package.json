@@ -1,12 +1,15 @@
 {
-    "name": "fragglefinder",
-    "version": "1.0.0",
-    "description": "Find your Fraggle",
-    "main": "server.js",
-    "dependencies": {
-       "express": "^4.16.3"
-    },
-    "scripts": {
-      "start": "node server.js"
-    }
+  "name": "fragglefinder",
+  "version": "1.0.0",
+  "description": "Find your Fraggle",
+  "main": "server.js",
+  "dependencies": {
+    "body": "^5.1.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "parser": "^0.1.4"
+  },
+  "scripts": {
+    "start": "node server.js"
   }
+}

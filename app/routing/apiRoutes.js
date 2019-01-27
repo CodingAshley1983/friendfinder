@@ -1,4 +1,5 @@
 var friendsData= require("../data/friends.js")
+var bodyparser = require("body-parser")
 console.log(friendsData);
 
 // Displays all friends
@@ -39,7 +40,7 @@ app.get("/api/friends", function(req, res) {
     }
     // var totalDifference = 0;
     console.log("Total difference is working")
-    for(i=0; i<friendsData.length; i++){
+    for(i=0; i<friendsData.slice(0,5).length; i++){
       var currentFriend= friendsData[i];
       console.log("current friend name: " + currentFriend.name);
       var totalDifference= 0;
